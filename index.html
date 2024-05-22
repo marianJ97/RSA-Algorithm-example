@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RSA algorithm example</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>RSA Algorithm Example</h1>
+
+      <div class="section">
+        <label for="message">Message:</label>
+        <input
+          type="text"
+          id="message"
+          placeholder="Enter text to encrypt..."
+        />
+        <button onclick="encryptFn()">Encrypt</button>
+      </div>
+
+      <div class="section">
+        <label for="encryptedMessage">Encrypted message:</label>
+        <p id="encryptedMessage" class="output">
+          Text will be displayed here...
+        </p>
+        <button onclick="decryptFn()">Decrypt</button>
+      </div>
+
+      <div class="section">
+        <label for="decryptedMessage">Decrypted message:</label>
+        <p id="decryptedMessage" class="output">
+          Text will be displayed here...
+        </p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
